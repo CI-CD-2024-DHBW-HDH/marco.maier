@@ -21,10 +21,7 @@ module.exports = {
     overrides: [
       {
         files: ['*.svelte'],
-        processor: 'svelte3/svelte3',
-        rules: {
-          "@typescript-eslint/no-unsafe-argument": "off"
-        }
+        processor: 'svelte3/svelte3'
       }
     ],
     settings: {
@@ -34,6 +31,7 @@ module.exports = {
     ignorePatterns: ['node_modules', 'dist', 'svelte.config.js'],
     rules: {
       "no-unused-vars": "off",
+      "@typescript-eslint/no-unsafe-argument": "off",
       "unused-imports/no-unused-imports": "error",
       "unused-imports/no-unused-vars": [
         "warn",
